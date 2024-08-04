@@ -1,0 +1,176 @@
+*{
+    padding: 0; /*Eliminamos los espacios de relleno dentro del contenedor*/
+    margin:0; /*Quitamos el margen de toda la página*/
+}
+
+h1{
+    background-image: url(../Imagenes/Principio.png);
+    background-position: center; /*Centra la imagen*/
+    background-repeat: no-repeat; /*Evita que la imagen se repita */
+    background-size: cover; /*Para que cubra todo el margen*/
+    height: 270px; /*Altura del fondo*/
+    font-size:70px; /*El tamaño de la letra*/
+    text-align:center; /* El texto este alineado*/
+    padding: 20px; /*Un relleno de 20px*/
+    color: white; 
+    line-height: 270px; /*Posicion del texto arriba/abajo*/
+}
+
+h2{
+    font-size:40px; /*El tamaño de la letra*/
+    text-align:center; /* El texto este alineado*/
+    padding: 20px; /*Un relleno de 20px*/
+    line-height: 50px; /*Posicion del texto arriba/abajo*/
+    color:#CA6702
+}
+
+h3{
+    color:white;
+    font-size:40px; /*El tamaño de la letra*/
+    text-align:center; /* El texto este alineado*/
+    padding: 20px; /*Un relleno*/
+    line-height: 50px; /*Posicion del texto arriba/abajo*/
+}
+
+h4{
+    color:white;
+    font-size:25px; /*El tamaño de la letra*/
+    text-align:center; /* El texto este alineado*/
+    padding: 5px;/*Un relleno*/
+    line-height: 50px; /*Posicion del texto arriba/abajo*/
+}
+
+html{
+    scroll-behavior: smooth; /*La animación del scroll*/
+}
+
+/*----NAVEGACIÓN-----------------------*/
+nav ul{
+    background-color: black; /*Color del fondo*/
+    width: 100%; /*Tamaño del largo*/
+    list-style-type: none; /*Quitamos el estilo de las listas*/
+    text-align: center; /*Centramos el texto*/
+}
+
+nav li{
+    display:inline-flex; /*Esto para que las listas esten en forma horizontal*/
+}
+
+nav a{
+    text-decoration: none; /*Les quitamos la decoración a los enlaces*/
+    color:white;
+    padding: 10px; /*Un relleno*/
+    width: 150px; /*Ancho*/
+}
+
+nav li:hover{
+    background-color:#CA6702;
+}
+
+/*----INFORMACIÓN-----------------*/
+.Informacion{
+    padding: 20px 0; /*Un relleno*/
+    position: relative; /*Podemos ajustar la posicion como querramos*/
+    text-align: center; /*Alineamos el texto*/
+}
+
+.Informacion p{
+    font-size: 16px;
+    padding: 0 250px; /*Relleno de 0 de arriba y abajo pero a los costados un relleno de 250*/
+    margin-bottom: 35px; /*Establece un margen entre el elemento actual y el otro que esta vertical*/
+}
+
+/*----MIEMBROS-----------------*/
+.OpcionMultiple {
+    padding: 10px 0; /*Relleno arriba/abajo y derecha/izquierda*/
+    position: relative; /*Puedo modificar la posicion*/
+    max-width: 1000px; /*Establecemos el maximo ancho que o dejara que se desborde el contenido*/
+    margin: 0px auto; /*margen arriba/abajo y derecha/izquierda*/
+    text-align: center; /*Centro el texto*/
+    border-radius: 5px; /*Bordeamos*/
+    background-color: #CA6702; 
+}
+
+.OpcionMultiple p{
+    color:white;
+    padding: 0 150px; /*Relleno arriba/abajo y derecha/izquierda*/
+}
+
+.OM-contenido {
+    display: flex; /*Contenido flexible*/
+    justify-content: space-between; /*Distribuye el contenido flexible de manera uniforme*/
+}
+
+.OM-Partes {
+    padding: 15px 55px; /*Relleno arriba/abajo y derecha/izquierda*/
+}
+
+.OM-Partes img {
+    width: 200px; /*Ancho*/
+    height: 200px; /*Alto*/
+    border-radius: 50%; /*Bordeamos*/
+    object-fit: cover; /*Controla el contenido, y en este caso lo cubre*/
+    transition: all 300ms; /*Estamos dando una transicion a la imagen.*/
+    /*Al poner "all" significa que afectara a las otras propiedades que estamos usando*/
+}
+
+.OM-Partes img:hover{
+    transform: scale(1.10); /*El elemento aumentara su tamaño un 110% de su tam original*/
+}
+
+.OM-Partes h3 {
+    font-size: 25px;
+    color: #323337;
+}
+
+/*----COMENTA----------*/
+.Comenta{
+    background-color: black;
+    width: 30%; /*Ancho*/
+    padding:20px; /*Relleno*/
+    margin:0px auto;
+    border-radius: 8px; /*Redondear los bordes*/
+}
+
+.formulario{
+    display:flex; /*Contenidos flexibles*/
+    flex-direction: column; /*Los elementos flexibles se alinearan en forma vertical*/
+}
+
+.caja{
+    display: flex; /*Contenidos flexibles*/
+    justify-content: space-between; /*Distribuye el contenido flexible de manera uniforme*/
+}
+
+button{
+    background-color: #CA6702;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer; /*Cambia el aspecto del cursor a una manita apuntando*/
+}
+
+/*----FOOTER---------------------*/
+footer{
+    width: 100%; /*Ancho*/
+    height: 250px; /*Alto*/
+    background-image: url(../Imagenes/Final.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    margin-top:40px;
+    justify-content: center;/*Distribuye el contenido de manera centrada*/
+}
+
+footer p{
+    font-size:20px;
+    text-align: center;
+    padding: 30px; /*Relleno*/
+}
+
+footer img{
+    width: 250px; /*Ancho*/
+    display: flex; /*Contenido flexible*/
+}

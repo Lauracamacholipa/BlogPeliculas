@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  /*----NAVEGACIÓN-----------------------*/
+nav ul{
+  background-color: black; /*Color del fondo*/
+  width: 100%; /*Tamaño del largo*/
+  list-style-type: none; /*Quitamos el estilo de las listas*/
+  text-align: center; /*Centramos el texto*/
+}
+
+nav li{
+  display:inline-flex; /*Esto para que las listas esten en forma horizontal*/
+}
+
+nav a{
+  text-decoration: none; /*Les quitamos la decoración a los enlaces*/
+  color:white;
+  padding: 10px;
+  width: 150px;
+}
+
+nav li:hover{
+  background-color:#CA6702;
+}
+
+/*-----------------------------------------*/
+  
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .serie {
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+  }
+  
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para la tabla de temporadas 
+.table-container {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-container tr:hover {
+  background-color: #ddd;
+}
+*/
+/* Estilo para las descripciones de personajes */
+.character {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.character img {
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.character h4 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.character p {
+  margin: 0;
+  font-size: 0.9em;
+}
+

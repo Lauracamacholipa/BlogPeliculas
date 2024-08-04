@@ -1,0 +1,118 @@
+*{
+    padding: 0; /*Eliminamos los espacios de relleno dentro del contenedor*/
+    margin:0; /*Quitamos el margen de toda la página*/
+}
+
+html{
+    scroll-behavior: smooth; /*La animación del scroll*/
+}
+
+h2{
+    font-size:50px; /*El tamaño de la letra*/
+    text-align:center; /* El texto este alineado*/
+}
+
+/*----HEADER-----------------------*/
+.Portada{
+    background-image: url(../Imagenes/Laura.png);
+    background-position: center; /*Centra la imagen*/
+    background-repeat: no-repeat; /*Evita que la imagen se repita */
+    background-size: cover; /*Para que cubra todo el margen*/
+    height: 270px; /*Altura del fondo*/
+    text-align:center; /* El texto este alineado*/
+    display: flex; /*El contenedor sea flexible*/
+    flex-direction: column; /*Los elementos flexibles se apilaran verticalmente*/
+    justify-content: center; /*Centra verticalmente*/
+    align-items: center; /*Centra Horizontalmente el contenido de dentro*/
+}
+
+.Portada h1{
+    font-size:70px; /*El tamaño de la letra*/
+    color: white;
+    line-height: 70px; /*Posicion del texto arriba/abajo*/
+}
+
+.Portada p{
+    color: white;
+    padding: 0 150px;
+}
+
+/*----NAVEGACIÓN-----------------------*/
+.Navegacion ul{
+    background-color: black; /*Color del fondo*/
+    width: 100%; /*Ancho*/
+    list-style-type: none; /*Quitamos el estilo de las listas*/
+    text-align: center; /*Centramos el texto*/
+}
+
+.Navegacion li{
+    display:inline-flex; /*Esto para que las listas esten en forma horizontal*/
+}
+
+.Navegacion a{
+    text-decoration: none; /*Les quitamos la decoración a los enlaces*/
+    color:white;
+    padding: 10px; /*Se aplicara un contenido de relleno de 10 px desde todos los lados en el contenido*/
+    width: 150px; /*Ancho*/
+}
+
+.Navegacion li:hover{
+    background-color:#3B6212;
+}
+
+/*----CONTENIDO---------------------*/
+.Contenido{
+    background-color: black;
+    color:white;
+    display: flex; /*Hacemos los elementos flexibles*/
+    justify-content: space-between; /*Alineamos los elementos*/
+    padding: 40px; /*Espaciado desde adentro del contenido hacia todos los lados*/
+    width: 80%; /*Ancho*/
+    margin: 15px auto; /*Un margen donde tendra 15px en la parte inferior y superior y se centrara automaticamente a lo ancho*/
+    border-radius: 20px; /*Establece el radio de los bordes del cuadro*/
+}
+
+/*SECTION*/
+.Contenido section{
+    display: flex; /*Hace que los elementos del contenedor puedan ser flexibles*/
+    width: 300px; /*Ancho*/
+    height: 100px; /*Alto*/
+}
+
+.Contenido video{
+    width: 560px; /*Tamaño del recuadro del video*/
+    border-radius: 15px; /*Establece el radio de los bordes del video*/
+}
+
+.Contenido h3{
+    font-size: 40px; /*Tamaño del texto*/
+    line-height: 60px; /*Establece la altura entre las lineas de texto*/
+    margin-bottom: 20px; /*Establece un margen en la parte inferior*/
+}
+
+.Contenido p{
+    margin-right: 20px; /*Establece un margen en el lado derecho del contenido*/
+}
+
+/*-----RECOMENDACIONES-----------------*/
+.Contenido-Texto img{
+    width: 100px; /*Ancho*/
+    margin:0 10px; /*Se establece un margen. Al poner 0 es referente al margen que hay de arriba a abajo y el 10 es para derecha e iquierda*/
+    transition: all 300ms; /*Estamos dando una transicion a la imagen.*/
+                            /*Al poner "all" significa que afectara a las otras propiedades que estamos usando*/
+}
+
+.Contenido-Texto img:hover{
+    transform: scale(1.15); /*El elemento aumentara su tamaño un 115% de su tam original*/
+}
+
+/*----FOOTER---------------------*/
+footer{
+    width: 100%; /*Ancho*/
+    height: 170px; /*Alto*/
+    background-color: #3B6212; /*Color del fondo*/
+}
+
+footer img{
+    width: 160px; /*Ancho de la img*/
+}
